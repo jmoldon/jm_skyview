@@ -1,5 +1,5 @@
 # jm_skyview
-Script to retrieve cutout images from NASA Skyview service from fields identified by source name or coordinates.
+Script to retrieve cutout images from NASA Skyview service from fields identified by source name or coordinates and plot them using APLpy.
 
 Some of the functions are adapted from https://github.com/cosmicpudding/skyviewbot/tree/master/skyviewbot
 
