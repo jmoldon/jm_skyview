@@ -3,9 +3,9 @@ channels:
   - defaults
   - conda-forge
 dependencies:
-  - aplpy
-  - pydrive
-  - astropy
-  - astroquery
-  - numpy
-  - matplotlib
+  - aplpy=2.0.3
+  - astropy=4.2.1
+  - astroquery=0.4.1
+  - jupyterlab=3.0.14
+  - matplotlib=3.3.4
+  - numpy=1.20.1
