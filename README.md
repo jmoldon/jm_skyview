@@ -9,3 +9,11 @@ python jm_skyview.py {source_name}
 python jm_skyview.py -s {survey} -p {mypath} {source_name}
 python jm_skyview.py -s {survey} -p {mypath} {ra_deg},{dec_deg}
 ```
+
+## Example
+```bash
+python jm_skyview.py M31  -s DSS --fov 2 -p example
+```
+[](./example/M31_DSS_2.0d.png)
+
+

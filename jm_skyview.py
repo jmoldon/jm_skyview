@@ -120,10 +120,10 @@ def main(*function_args):
                         default='DSS',
                         type=str,
                         help="Survey name, e.g. 'DSS' (default: %(default)s)")
-    parser.add_argument('-r', '--radius',
+    parser.add_argument('--fov',
                         default=1.,
                         type=float,
-                        help="Radius (default: %(default)s)")
+                        help="FoV (default: %(default)s)")
     parser.add_argument('-c', '--colormap',
                         default="viridis",
                         type=str,
@@ -147,11 +147,11 @@ def main(*function_args):
         fieldname = field
 
     survey = args.survey.replace(' ', '_')
-    fits_name = f'{fieldname}_{survey}_{args.radius}d.fits'
+    fits_name = f'{fieldname}_{survey}_{args.fov}d.fits'
     fits_path = os.path.join(args.path, fits_name)
     if not os.path.isfile(fits_path):
         print('Downloading file')
-        call_skyview(args.survey, (ra, dec), args.radius, 'J2000', fits_path)
+        call_skyview(args.survey, (ra, dec), args.fov, 'J2000', fits_path)
     else:
         print(f'Already downlaoded images: {fits_path}')
     if os.path.isfile(fits_path) and not os.path.isfile(fits_path.replace('.fits', '.png')):
