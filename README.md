@@ -14,6 +14,6 @@ python jm_skyview.py -s {survey} -p {mypath} {ra_deg},{dec_deg}
 ```bash
 python jm_skyview.py M31  -s DSS --fov 2 -p example
 ```
-[](./example/M31_DSS_2.0d.png)
+![](example/M31_DSS_2.0d.png)
 
 
